@@ -21,9 +21,18 @@ int main()
             x=i;
         }
     }
-    printf("\nBetween '%d' and '%d', the number '%d' has the highest life cycle of '%d' steps..",m,n,x,k);
-}
+    printf("\nBetween '%d' and '%d', the number",m,n);
 
+
+    for(i=m; i<=n; i++)
+    {
+        if(q[i]==k)
+        {
+            printf (" %d,",i);
+        }
+    }
+    printf(" has the highest life cycle of %d steps.",k);
+}
 int steps(int n)
 {
     if (n%2==0 && n!=1)
